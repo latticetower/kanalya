@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kanalya"
+description = "My experiments with Kolmogorov-Arnold Networks, in d'Artagnan style"
+
+authors = [
+  {name = "Tatiana Malygina"},
+]
+maintainers = [
+  {name = "Tatiana Malygina"}
+]
+version = "2025.08.24"
+dependencies = [
+    "numpy",
+    "scipy",
+    "tqdm",
+    "torch",
+    "scikit-learn",
+    "rootutils",
+]
+
+readme = "readme.md"
+
+requires-python = ">=3.8"
+
+
+[tool.setuptools.packages]
+find = {}
+
+[tool.setuptools.package-data]
+"*" = [".project-root"]
+
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+
+[project.urls]
+Repository = "https://github.com/latticetower/kanalya.git"
